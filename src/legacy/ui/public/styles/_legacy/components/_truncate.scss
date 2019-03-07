@@ -1,3 +1,14 @@
 .truncate-by-height {
   overflow: hidden;
+  position: relative;
+
+  &::after {
+    box-shadow: 0 0 $euiSizeL ($euiSize / 2) $euiColorEmptyShade;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }

@@ -38,6 +38,10 @@
   white-space: nowrap;
 }
 
+.kbnDocViewer__value--collapsible {
+  padding-top: $euiSizeXS / 2; // Better alignment next to collapse button
+}
+
 .kbnDocViewer__actionButton {
   opacity: 0;
 

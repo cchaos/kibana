@@ -202,7 +202,7 @@ describe('docViews', function () {
 
     describe('collapse row', function () {
       it('should not collapse or expand other fields', function () {
-        const collapseBtns = $elem.find('.discover-table-open-button');
+        const collapseBtns = $elem.find('.kbnDocViewer__expandValueButton');
         const first = collapseBtns.first()[0];
         const last = collapseBtns.last()[0];
 
@@ -220,13 +220,13 @@ describe('docViews', function () {
       });
 
       it('should collapse an overflowed field details by default', function () {
-        const collapseBtn = $elem.find('.discover-table-open-button').first()[0];
+        const collapseBtn = $elem.find('.kbnDocViewer__expandValueButton').first()[0];
         expect(collapseBtn.parentElement.parentElement.lastElementChild
           .classList.contains('truncate-by-height')).to.equal(true);
       });
 
       it('should expand and collapse an overflowed field details', function () {
-        const collapseBtn = $elem.find('.discover-table-open-button').first()[0];
+        const collapseBtn = $elem.find('.kbnDocViewer__expandValueButton').first()[0];
         const spy = sinon.spy($scope, 'toggleViewer');
 
         collapseBtn.click();
@@ -245,7 +245,7 @@ describe('docViews', function () {
 
       it('should have collapse button available in View single document mode', function () {
         $scope.filter = null;
-        const collapseBtn = $elem.find('.discover-table-open-button').first()[0];
+        const collapseBtn = $elem.find('.kbnDocViewer__expandValueButton').first()[0];
         expect(collapseBtn).not.to.equal(null);
       });
     });
