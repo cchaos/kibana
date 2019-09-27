@@ -10,7 +10,6 @@ import classNames from 'classnames';
 import { I18nProvider } from '@kbn/i18n/react';
 import { i18n } from '@kbn/i18n';
 import {
-  EuiLink,
   EuiFlexGroup,
   EuiFlexItem,
   EuiBottomBar,
@@ -257,7 +256,6 @@ export function App({
                   button={
                     <EuiButtonEmpty
                       color="ghost"
-                      size="s"
                       iconType="pencil"
                       iconSide="right"
                       onClick={() => setIsTitlePopoverOpen(!isTitlePopoverOpen)}
@@ -282,7 +280,6 @@ export function App({
                   data-test-subj="lnsApp_saveButton"
                   color="primary"
                   fill
-                  size="s"
                   iconType="save"
                   disabled={!isSaveable}
                   onClick={() => {
