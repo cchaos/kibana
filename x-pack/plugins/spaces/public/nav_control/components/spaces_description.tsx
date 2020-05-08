@@ -4,7 +4,6 @@
  * you may not use this file except in compliance with the Elastic License.
  */
 
-import './spaces_description.scss';
 import { EuiContextMenuPanel, EuiText } from '@elastic/eui';
 import React, { FC } from 'react';
 import { Capabilities, ApplicationStart } from 'src/core/public';

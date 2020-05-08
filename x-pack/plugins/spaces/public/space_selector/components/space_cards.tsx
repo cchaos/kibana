@@ -4,7 +4,6 @@
  * you may not use this file except in compliance with the Elastic License.
  */
 
-import './space_cards.scss';
 import { EuiFlexGroup, EuiFlexItem } from '@elastic/eui';
 import React, { Component } from 'react';
 import { Space } from '../../../common/model/space';
